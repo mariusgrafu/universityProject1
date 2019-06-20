@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Red Dead Redemption II</title>
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" type="image/png" href="img/tablogo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="icons/css/rdr.css">
+  <script src="js/js.js"></script>
+
+</head>
+
+<body class="orderBody">
+    <div class="trailerWrap">
+            <div class="videoOverlay"></div>
+    </div>
+  
+    <header>
+
+        <div class="mainWrap">
+                <div class="logoWrap">
+                    <img class="logo" src="img/logo.svg" alt="red dead redemption 2 logo" />
+                </div>
+
+                <nav id="navbar">
+                    <a href="index.html">home <div class="menuBG"></div></a>
+                    <a href="trailers.html">trailers <div class="menuBG"></div></a>
+                    <a href="screens.html">screens <div class="menuBG"></div></a>
+                    <a href="characters.html">characters <div class="menuBG"></div></a>
+                    <a href="order.html" active>order <div class="menuBG"></div></a>
+                </nav>
+        
+                <div class="userWrapCont">
+                    <div class="userWrap">
+                        <div class="userOptionsCont">
+                            <a href="#">overview</a>
+                            <a href="#">story</a>
+                            <a href="#">challenges</a>
+                            <a href="#">player</a>
+                            <a href="#">catalogue</a>
+                            <a href="#">achievements</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobileMenuTog" id="mobileTog"></div>
+        </div>
+    </header>
+
+    <section class="orderSection">
+        <div class="mainWrap">
+            <form id="orderForm">
+
+                <div class="inputWrap">
+                    <label>Platform</label>
+                    <div class="inputRadioWrap">
+                        <input type="radio" name="platform" value="ps4" checked>
+                        <span>Playstation 4</span>
+                    </div>
+                    <div class="inputRadioWrap">
+                        <input type="radio" name="platform" value="xbone">
+                        <span>Xbox One</span>
+                    </div>
+                </div>
+                <div class="inputWrap">
+                    <label>Edition</label>
+                    <div class="inputRadioWrap">
+                        <input type="radio" name="edition" value="standard" checked>
+                        <span>Standard Edition</span>
+                    </div>
+                    <div class="inputRadioWrap">
+                        <input type="radio" name="edition" value="special">
+                        <span>Special Edition</span>
+                    </div>
+                    <div class="inputRadioWrap">
+                        <input type="radio" name="edition" value="ultimate">
+                        <span>Ultimate Edition</span>
+                    </div>
+                </div>
+                <div class="inputWrap">
+                    <label>Retailer</label>
+                    <select name="retailer">
+                        <option value="altex">Altex</option>
+                        <option value="flanco">Flanco</option>
+                    </select>
+                </div>
+                <div class="inputWrap">
+                    <label>Format</label>
+                    <div class="inputRadioWrap">
+                        <input type="radio" name="format" value="physical" checked>
+                        <span>Physical</span>
+                    </div>
+                    <div class="inputRadioWrap">
+                        <input type="radio" name="format" value="digital">
+                        <span>Digital</span>
+                    </div>
+                </div>
+
+
+                <div class="inputWrap" id="physicalDetails">
+                    <label>Shipping Address</label>
+                    <textarea name="shipping"></textarea>
+
+                    <div class="inputRadioWrap">
+                        <input type="checkbox" name="fastShipping" value="fastShipping">
+                        <span>Extra Fast Shipping</span>
+                    </div>
+                </div>
+
+                <div class="inputWrap" id="digitalDetails" style="display: none">
+                    <label>E-Mail Address</label>
+                    <input type="text" name="email" placeholder="name@email.com">
+                </div>
+
+                <input type="submit" value="Order Game">
+
+            </form>
+
+            <div class="gameCoverWrap">
+                <img id="coverArt" src="img/order/ps4.jpg" alt="game cover">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="mainWrap">
+            <ul>
+                <li><a href="https://socialclub.rockstargames.com/" target="_blank" class="rdricon-socialclub"></a></li>
+                <li><a href="https://www.rockstargames.com/" target="_blank" class="rdricon-rstar"></a></li>
+            </ul>
+    
+            <img src="img/outlaws.svg" alt="outlaws for life" />
+            
+            <ul>
+                <li><a href="https://www.facebook.com/rockstargames" target="_blank" class="rdricon-facebook"></a></li>
+                <li><a href="https://twitter.com/rockstargames" target="_blank" class="rdricon-twitter"></a></li>
+                <li><a href="https://instagram.com/rockstargames" target="_blank" class="rdricon-instagram"></a></li>
+                <li><a href="http://youtube.com/rockstargames" target="_blank" class="rdricon-youtube"></a></li>
+                <li><a href="https://twitch.tv/rockstargames" target="_blank" class="rdricon-twitch"></a></li>
+            </ul>
+    </div>
+    </footer>
+
+    
+  <script src="js/order.js"></script>
+</body>
+
+</html>
